@@ -698,26 +698,22 @@ nav {
     color: var(--primary-color);
 }
 
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
 .social-link {
-    width: 40px;
-    height: 40px;
-    background-color: var(--gray-bg);
-    border-radius: 50%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 0.5rem; /* space between icon and text */
+    text-decoration: none;
+    color: var(--primary-color);
     transition: var(--transition);
 }
 
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* Optional hover effect */
 .social-link:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-5px);
+    color: var(--secondary-color);
 }
 
 .form-group {
@@ -1080,5 +1076,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
