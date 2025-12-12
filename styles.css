@@ -860,6 +860,18 @@ footer {
     opacity: 0.6;
     font-size: 0.9rem;
 }
+.footer-photo {
+    margin-top: 15px;
+    text-align: left; /* align with your design */
+}
+
+.footer-photo img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -1092,6 +1104,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
