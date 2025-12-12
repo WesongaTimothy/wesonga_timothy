@@ -390,7 +390,7 @@ nav {
 .stats-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1.87rem;
 }
 
 .stat-item {
@@ -398,14 +398,14 @@ nav {
 }
 
 .stat-number {
-    font-size: 2.2rem;
+    font-size: 1.82rem;
     font-weight: 600;
     color: var(--primary-color);
     display: block;
 }
 
 .stat-label {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     color: var(--text-color);
 }
 
@@ -1076,6 +1076,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
