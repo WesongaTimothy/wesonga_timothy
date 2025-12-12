@@ -369,7 +369,7 @@ nav {
 /* Text Width Balanced */
 .about-text {
     flex: 1 1 55%;
-    font-size: 1.05rem;
+    font-size: 1.35rem;
     line-height: 1.8;
     color: var(--text-color);
 }
@@ -409,15 +409,15 @@ nav {
     }
 
     .about-image {
-        margin: 2rem auto;
+        margin: 3rem auto;
         transform: rotate(0deg);
         max-width: 350px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .about-text {
-        font-size: 0.95rem;
+        font-size: 1.20rem;
     }
 
     .about-image {
@@ -1092,6 +1092,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
