@@ -866,12 +866,12 @@ footer {
 }
 
 .footer-photo img {
-    width: 30px;
-    height: 30px;
-    border-radius: 30%;
+    width: 40px;     /* Reduce size here (try 50px, 60px, 70px) */
+    height: auto;
+    border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
+
 
 /* Animations */
 @keyframes fadeInUp {
@@ -1104,6 +1104,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
