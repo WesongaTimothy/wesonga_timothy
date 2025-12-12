@@ -354,22 +354,30 @@ nav {
     animation: float 3s infinite reverse;
 }
 
-/* About Section */
+/* ABOUT SECTION FIX — Fits Perfectly on All Screens */
 .about-content {
     display: flex;
-    align-items: center;
-    gap: 4rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
+/* Text Width Balanced */
 .about-text {
-    flex: 1;
+    flex: 1 1 55%;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-color);
 }
 
+/* Image Balanced */
 .about-image {
-    flex: 1;
+    flex: 1 1 35%;
+    max-width: 400px;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -377,8 +385,9 @@ nav {
     transition: var(--transition);
 }
 
+/* Rotation effect on hover */
 .about-image:hover {
-    transform: rotate(0);
+    transform: rotate(0deg);
 }
 
 .about-image img {
@@ -387,26 +396,33 @@ nav {
     display: block;
 }
 
-.stats-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.87rem;
+/* Responsive Behavior */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .about-image {
+        margin: 2rem auto;
+        transform: rotate(0deg);
+        max-width: 350px;
+    }
 }
 
-.stat-item {
-    text-align: center;
-}
+@media (max-width: 600px) {
+    .about-text {
+        font-size: 0.95rem;
+    }
 
-.stat-number {
-    font-size: 1.82rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    display: block;
-}
-
-.stat-label {
-    font-size: 1.15rem;
-    color: var(--text-color);
+    .about-image {
+        max-width: 300px;
+    }
 }
 
 /* Expertise Section */
@@ -1076,6 +1092,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
