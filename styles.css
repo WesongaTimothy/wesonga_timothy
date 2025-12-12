@@ -866,9 +866,9 @@ footer {
 }
 
 .footer-photo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
     object-fit: cover;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
@@ -1104,6 +1104,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
