@@ -848,31 +848,6 @@ footer {
     background-color: var(--secondary-color);
 }
 
-.footer-bottom {
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom p {
-    margin-bottom: 0;
-    opacity: 0.6;
-    font-size: 0.9rem;
-}
-.footer-photo {
-    margin-top: 15px;
-    text-align: left; /* align with your design */
-}
-
-.footer-photo img {
-    width: 40px;     /* Reduce size here (try 50px, 60px, 70px) */
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-
 /* Animations */
 @keyframes fadeInUp {
     to {
@@ -1104,6 +1079,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
