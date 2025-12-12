@@ -362,6 +362,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    flex-wrap: wrap; /* allow items to wrap on smaller screens */
 }
 
 .about-text {
@@ -369,16 +370,16 @@ nav {
 }
 
 .about-image {
-    flex: 1;
+   flex: 1 1 300px; /* flex-grow:1, flex-shrink:1, flex-basis:300px */
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
-    transform: rotate(3deg);
-    transition: var(--transition);
+    transform: rotate(360deg);
+    transition: transform 0.4s ease-in-out;
 }
 
 .about-image:hover {
-    transform: rotate(0);
+    transform: rotate(3600);
 }
 
 .about-image img {
@@ -1078,5 +1079,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
