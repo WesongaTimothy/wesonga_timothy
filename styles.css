@@ -882,13 +882,13 @@ footer {
 }
 .footer-bottom {
     text-align: center;         /* center the text */
-    padding: 1.5rem 0;          /* vertical spacing */
+    padding: 1.2rem 0;          /* vertical spacing */
     background-color: #0d1b2a;  /* match footer background */
     color: #FFD700;             /* footer text color */
-    font-size: 1.35rem;
+    font-size: 1.55rem;
     opacity: 0.9;
     width: 100%;                /* ensure it spans full width */
-    margin-top: 2.3rem;           /* optional spacing from above content */
+    margin-top: 1.3rem;           /* optional spacing from above content */
 }
 @media (max-width: 768px) {
     .footer-bottom {
@@ -1209,6 +1209,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
