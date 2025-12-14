@@ -901,6 +901,23 @@ textarea:focus {
     margin-bottom: 1.5rem;
 }
 
+.graduation-gallery {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+
+.gallery-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
 .graduation-slider {
     width: 100%;
     max-width: 900px;
@@ -1285,6 +1302,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
