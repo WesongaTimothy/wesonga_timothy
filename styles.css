@@ -181,11 +181,13 @@ nav {
 
 .logo {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 900;
 }
-
 .logo-text {
-    color: var(--text-color);
+    background-color: #FFD700; /* gold background, change to any color you want */
+    color: #000; /* text color */
+    padding: 0.2rem 0.5rem; /* small padding around text */
+    border-radius: 5px; /* optional: rounded corners */
 }
 
 .nav-links {
@@ -1232,6 +1234,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
