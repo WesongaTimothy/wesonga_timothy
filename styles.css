@@ -884,39 +884,10 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
-.graduation-slider img {
-  width: 100%;
-  max-width: 900px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: opacity 1s ease-in-out; /* smooth fade */
-}
-
-.gallery-track {
-  display: flex;
-  width: calc(21 * 200px); /* 21 images of 200px each */
-  animation: slideGallery 21s linear infinite;
-}
-
-.gallery-track img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  margin-right: 10px;
-  border-radius: 8px;
-}
-
-/* Animation */
-@keyframes slideGallery {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* Gallery Header */
-.gallery-header {
+.graduation-gallery {
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
 }
 
 .gallery-header h2 {
@@ -927,36 +898,33 @@ textarea:focus {
 .gallery-header p {
     font-size: 1rem;
     color: #555;
+    margin-bottom: 1.5rem;
 }
 
-/* Graduation Slider */
 .graduation-slider {
     width: 100%;
     max-width: 900px;
-    height: 500px; /* adjust as needed */
-    overflow: hidden;
-    margin: 0 auto 2rem auto;
+    height: 500px; /* adjust height */
+    margin: 0 auto;
     border-radius: 12px;
+    overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     position: relative;
 }
 
-.image-wrapper {
-    display: flex;
-    width: calc(100% * 21); /* 21 images */
-    animation: slideImages 6.3s steps(21) infinite; /* 0.3s per image */
-}
-
-.image-wrapper img {
+.graduation-slider img {
     width: 100%;
-    flex-shrink: 0;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-/* Keyframes for step sliding effect */
-@keyframes slideImages {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+.graduation-slider img.active {
+    opacity: 1;
 }
 
 /* Footer */
@@ -1317,6 +1285,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
