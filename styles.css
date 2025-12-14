@@ -884,11 +884,13 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
-.gallery-slider {
-  overflow: hidden;
+.graduation-slider img {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.4s ease-in-out; /* smooth fade */
 }
 
 .gallery-track {
@@ -1315,6 +1317,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
