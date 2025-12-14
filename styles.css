@@ -949,6 +949,22 @@ footer {
     color: var(--accent-color);
 }
 
+/* Ensure social links wrap on small screens */
+@media (max-width: 768px) {
+    .social-links-list {
+        flex-wrap: wrap;       /* allows links to move to next line */
+        justify-content: center; /* center them */
+        gap: 1rem;             /* spacing between links */
+    }
+
+    .social-links-list li {
+        display: inline-block;
+        width: auto;           /* let each link size itself */
+        margin: 0.3rem 0;
+    }
+}
+
+
 .footer-newsletter p {
     opacity: 0.8;
     margin-bottom: 1.5rem;
@@ -1209,6 +1225,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
