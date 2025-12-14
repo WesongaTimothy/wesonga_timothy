@@ -183,21 +183,9 @@ nav {
     font-size: 1.8rem;
     font-weight: 900;
 }
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
 
 .logo-text {
     color: var(--text-color);
-}
-
-.logo-text {
-    background-color: #ADD8E6; /* Light blue */
-    color: #000;               /* Black text for contrast */
-    padding: 0.3rem 0.6rem;    /* Small padding around text */
-    border-radius: 5px;        /* Rounded corners */
-    display: inline-block;     /* Makes padding apply nicely */
 }
 
 .nav-links {
@@ -1244,6 +1232,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
