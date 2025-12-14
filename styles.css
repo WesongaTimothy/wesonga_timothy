@@ -1,3 +1,4 @@
+
 /* Base Styles and Variables */
 :root {
     --primary-color: #4361ee;
@@ -233,7 +234,128 @@ nav {
     transition: var(--transition);
 }
 
-/* ABOUT SECTION FIX */
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+.roles {
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.role-wrapper {
+    animation: slideRoles 14s infinite;
+}
+
+.role {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.8s;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 1.1s;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphShape 10s infinite;
+    opacity: 0.2;
+}
+
+.image-container {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 5px solid white;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.floating-badge {
+    position: absolute;
+    background-color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 3;
+}
+
+.floating-badge i {
+    color: var(--primary-color);
+}
+
+.education {
+    top: 10%;
+    right: 5%;
+    animation: float 3s infinite;
+}
+
+.experience {
+    bottom: 10%;
+    left: 5%;
+    animation: float 3s infinite reverse;
+}
+
+/* ABOUT SECTION FIX — Fits Perfectly on All Screens */
 .about-content {
     display: flex;
     align-items: flex-start;
@@ -241,15 +363,15 @@ nav {
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2rem;
     flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
 /* Text Width Balanced */
 .about-text {
     flex: 1 1 55%;
-    font-size: 1.85rem;
-    line-height: 2.195;
+    font-size: 1.35rem;
+    line-height: 1.8;
     color: var(--text-color);
 }
 
@@ -433,28 +555,16 @@ nav {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Make project card images fit properly */
 .project-image {
-    width: 100%;
-    height: 180px;               /* fixed card height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;            /* prevent overflow */
-    border-radius: var(--border-radius);
-    background-color: #fff;      /* optional: clean background */
+    height: 200px;
+    overflow: hidden;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;        /* preserve full image within container */
-    object-position: center;
-}
-@media (max-width: 768px) {
-    .project-image {
-        height: 140px;   /* slightly smaller on phones */
-    }
+    object-fit: cover;
+    transition: transform 0.5s;
 }
 
 .project-card:hover .project-image img {
@@ -970,4 +1080,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
