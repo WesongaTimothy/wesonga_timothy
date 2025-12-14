@@ -885,14 +885,14 @@ footer {
     padding: 1.2rem 0;          /* vertical spacing */
     background-color: #0d1b2a;  /* match footer background */
     color: #FFD700;             /* footer text color */
-    font-size: 1.55rem;
-    opacity: 0.9;
+    font-size: 1.25rem;
+    opacity: 1.5;
     width: 100%;                /* ensure it spans full width */
     margin-top: 1.3rem;           /* optional spacing from above content */
 }
 @media (max-width: 768px) {
     .footer-bottom {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -1225,6 +1225,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
