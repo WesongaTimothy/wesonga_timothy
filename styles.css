@@ -233,78 +233,21 @@ nav {
     transition: var(--transition);
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 4rem 6%;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-section {
-    padding: 3rem 1.2rem;
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 10rem;
 }
 
-/* Text side */
 .hero-content {
     flex: 1;
-    max-width: 600px;
-}
-
-/* Image side */
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container {
-    width: 100%;
-    max-width: 360px;
-}
-
-.profile-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-@media (max-width: 768px) {
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 3rem 1.2rem;
-    }
-
-    .hero-content {
-        max-width: 100%;
-    }
-
-    .hero-content h1 {
-        font-size: 1.4rem;
-    }
-
-    .roles {
-        font-size: 0.95rem;
-    }
-
-    .hero-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-
-    .hero-image {
-        margin-top: 2rem;
-    }
-
-    .image-container {
-        max-width: 280px;
-    }
+    padding-right: 2rem;
 }
 
 .animate-text {
@@ -411,7 +354,7 @@ section {
     animation: float 3s infinite reverse;
 }
 
-/* ABOUT SECTION FIX */
+/* ABOUT SECTION FIX — Fits Perfectly on All Screens */
 .about-content {
     display: flex;
     align-items: flex-start;
@@ -419,15 +362,15 @@ section {
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2rem;
     flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
 /* Text Width Balanced */
 .about-text {
     flex: 1 1 55%;
-    font-size: 1.85rem;
-    line-height: 2.195;
+    font-size: 1.35rem;
+    line-height: 1.8;
     color: var(--text-color);
 }
 
@@ -1148,22 +1091,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
