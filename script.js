@@ -290,13 +290,13 @@ setInterval(() => {
     setTimeout(() => {
         galleryImg.src = galleryImages[currentIndex];
         galleryImg.style.opacity = 1; // fade in
-    }, 400); // half of 4 seconds for smooth fade
-}, 4000); // change image every 4 seconds
-
+    }, 1000); // fade duration (1 second)
+}, 20000); // change image every 20 seconds
             });
         });
     }
 });
+
 
 
 
