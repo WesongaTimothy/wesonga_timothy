@@ -353,75 +353,73 @@ nav {
     left: 5%;
     animation: float 3s infinite reverse;
 }
-
-/* ABOUT SECTION FIX — Fits Perfectly on All Screens */
-.about-content {
+/* HERO SECTION*/
+.hero {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    flex-wrap: wrap; /* allows stacking on smaller screens */
+    gap: 2rem;
+    padding: 4rem 6%;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-/* Text Width Balanced */
-.about-text {
-    flex: 1 1 55%;
-    font-size: 1.35rem;
-    line-height: 1.8;
-    color: var(--text-color);
+/* Text side */
+.hero-content {
+    flex: 1;
+    max-width: 600px;
 }
 
-/* Image Balanced */
-.about-image {
-    flex: 1 1 35%;
-    max-width: 400px;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transform: rotate(3deg);
-    transition: var(--transition);
+/* Image side */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Rotation effect on hover */
-.about-image:hover {
-    transform: rotate(0deg);
+.image-container {
+    width: 100%;
+    max-width: 360px;
 }
 
-.about-image img {
+.profile-image {
     width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover;
+    border-radius: 20px;
 }
+@media (max-width: 768px) {
 
-/* Responsive Behavior */
-@media (max-width: 992px) {
-    .about-content {
+    .hero {
         flex-direction: column;
         text-align: center;
+        padding: 3rem 1.2rem;
     }
 
-    .about-text {
-        flex: 1 1 100%;
-        text-align: left;
+    .hero-content {
+        max-width: 100%;
     }
 
-    .about-image {
-        margin: 3rem auto;
-        transform: rotate(0deg);
-        max-width: 350px;
-    }
-}
-
-@media (max-width: 700px) {
-    .about-text {
-        font-size: 1.20rem;
+    .hero-content h1 {
+        font-size: 1.4rem;
     }
 
-    .about-image {
-        max-width: 300px;
+    .roles {
+        font-size: 0.95rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    .image-container {
+        max-width: 280px;
     }
 }
 
@@ -1091,3 +1089,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
