@@ -884,21 +884,50 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
-.graduation-gallery {
+/* Gallery Header */
+.gallery-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Graduation Slider */
+.graduation-slider {
+    width: 100%;
+    max-width: 900px;
+    height: 500px; /* adjust as needed */
+    overflow: hidden;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.image-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    width: calc(100% * 21); /* 21 images */
+    animation: slideImages 6.3s steps(21) infinite; /* 0.3s per image */
 }
 
-.graduation-gallery img {
-    width: calc(20% - 8px); /* 5 images per row */
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+.image-wrapper img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
-.graduation-gallery img:hover {
-    transform: scale(1.05);
+/* Keyframes for step sliding effect */
+@keyframes slideImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 /* Footer */
@@ -1259,6 +1288,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
