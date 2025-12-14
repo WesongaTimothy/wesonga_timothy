@@ -941,7 +941,7 @@ textarea:focus {
 .image-wrapper {
     display: flex;
     width: calc(100% * 21); /* 21 images */
-    animation: slideImages 6.3s steps(21) infinite; /* 0.3s per image */
+    animation: slideImages 42s steps(21) infinite; /* 21 images x 2s = 42s total */
 }
 
 .image-wrapper img {
@@ -950,7 +950,6 @@ textarea:focus {
     object-fit: cover;
 }
 
-/* Keyframes for step sliding effect */
 @keyframes slideImages {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
@@ -1315,6 +1314,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
