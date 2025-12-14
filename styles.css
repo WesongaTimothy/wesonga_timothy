@@ -243,6 +243,9 @@ nav {
     min-height: 100vh;
     box-sizing: border-box;
 }
+section {
+    padding: 3rem 1.2rem;
+}
 
 /* Text side */
 .hero-content {
@@ -408,7 +411,7 @@ nav {
     animation: float 3s infinite reverse;
 }
 
-/* ABOUT SECTION FIX — Fits Perfectly on All Screens */
+/* ABOUT SECTION FIX */
 .about-content {
     display: flex;
     align-items: flex-start;
@@ -423,8 +426,8 @@ nav {
 /* Text Width Balanced */
 .about-text {
     flex: 1 1 55%;
-    font-size: 1.45rem;
-    line-height: 1.95;
+    font-size: 1.85rem;
+    line-height: 2.195;
     color: var(--text-color);
 }
 
@@ -1145,6 +1148,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
