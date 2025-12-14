@@ -899,9 +899,10 @@ textarea:focus {
 .gallery-track img {
   width: 200px;
   height: 150px;
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 10px;
   border-radius: 8px;
+  image-rendering: auto;
 }
 
 /* Animation */
@@ -954,6 +955,7 @@ textarea:focus {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+
 
 
 /* Footer */
@@ -1314,6 +1316,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
