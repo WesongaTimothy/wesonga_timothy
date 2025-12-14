@@ -884,64 +884,28 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
-.graduation-gallery {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #f9f9f9;
-}
-
-.gallery-header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-header p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-
-.graduation-gallery {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #f9f9f9;
-}
-
-.gallery-header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-header p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-
 .graduation-slider {
     width: 100%;
     max-width: 900px;
-    height: 500px; /* adjust height */
+    height: 500px;
     margin: 0 auto;
-    border-radius: 12px;
     overflow: hidden;
+    border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     position: relative;
 }
 
-.graduation-slider img {
+.slide-track {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease-in-out; /* BEST speed */
+}
+
+.slide-track img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.graduation-slider img.active {
-    opacity: 1;
+    flex-shrink: 0;
 }
 
 /* Footer */
@@ -1302,6 +1266,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
