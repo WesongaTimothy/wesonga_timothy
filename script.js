@@ -280,22 +280,31 @@ const galleryImages = [
     "IMG11.jpg", "IMG12.jpg", "IMG13.jpg", "IMG14.jpg", "IMG15.jpg",
     "IMG16.jpg", "IMG17.jpg", "IMG18.jpg", "IMG19.jpg", "IMG20.jpg", "IMG21.jpg"
 ];
+            
+const slider = document.querySelector('.graduation-slider');
+
+// Create img elements for all images
+galleryImages.forEach((src, index) => {
+    const img = document.createElement('img');
+    img.src = src;
+    if(index === 0) img.classList.add('active'); // first image visible
+    slider.appendChild(img);
+});
 
 let currentIndex = 0;
-const galleryImg = document.getElementById("gallery-img");
+const imgs = slider.querySelectorAll('img');
 
 setInterval(() => {
-    currentIndex = (currentIndex + 1) % galleryImages.length;
-    galleryImg.style.opacity = 0; // fade out
-    setTimeout(() => {
-        galleryImg.src = galleryImages[currentIndex];
-        galleryImg.style.opacity = 1; // fade in
-    }, 1000); // fade duration (1 second)
-}, 20000); // change image every 20 seconds
+    imgs[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % imgs.length;
+    imgs[currentIndex].classList.add('active');
+}, 4000); // every 4 seconds
+
             });
         });
     }
 });
+
 
 
 
