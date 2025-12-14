@@ -904,18 +904,12 @@ textarea:focus {
 .graduation-slider {
     width: 100%;
     max-width: 900px;
-    height: 100%;
+    height: 500px; /* adjust height */
     margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     position: relative;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* faster fade */
 }
 
 .graduation-slider img {
@@ -1291,6 +1285,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
