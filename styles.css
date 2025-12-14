@@ -890,7 +890,7 @@ textarea:focus {
   height: 500px;
   object-fit: cover;
   border-radius: 12px;
-  transition: opacity 0.4s ease-in-out; /* smooth fade */
+  transition: opacity 1s ease-in-out; /* smooth fade */
 }
 
 .gallery-track {
@@ -1317,6 +1317,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
