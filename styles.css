@@ -884,6 +884,25 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
+.gallery-section {
+    padding: 4rem 2rem;
+    background-color: #f5f8ff; /* light background */
+    text-align: center;
+}
+
+.graduation-gallery {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+
+.graduation-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-bg);
@@ -1242,6 +1261,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
