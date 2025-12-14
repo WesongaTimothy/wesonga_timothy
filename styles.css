@@ -949,21 +949,28 @@ footer {
     color: var(--accent-color);
 }
 
-/* Ensure social links wrap on small screens */
+/* Footer social links — mobile friendly */
 @media (max-width: 768px) {
     .social-links-list {
-        flex-wrap: wrap;       /* allows links to move to next line */
-        justify-content: center; /* center them */
-        gap: 1rem;             /* spacing between links */
+        display: flex;
+        flex-wrap: wrap;           /* allow wrapping to next line */
+        justify-content: center;    /* center links horizontally */
+        gap: 0.8rem;               /* spacing between links */
+        padding: 0;
+        margin: 1rem 0;
     }
 
     .social-links-list li {
-        display: inline-block;
-        width: auto;           /* let each link size itself */
-        margin: 0.3rem 0;
+        display: inline-flex;      /* ensure links behave as inline items */
+        width: auto;               /* auto width so nothing is cut off */
+    }
+
+    .social-links-list a {
+        font-size: 1rem;           /* slightly smaller font on mobile */
+        padding: 0.3rem 0.5rem;
+        white-space: nowrap;       /* prevent text from breaking */
     }
 }
-
 
 .footer-newsletter p {
     opacity: 0.8;
@@ -1225,6 +1232,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
