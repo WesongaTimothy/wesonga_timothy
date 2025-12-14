@@ -394,6 +394,11 @@ nav {
 }
 
 /* ABOUT SECTION FIX — Fits Perfectly on All Screens */
+.about-container {
+    max-height: 150px;
+    overflow-y: auto;         /* add vertical scroll */
+    padding-right: 0.5rem;
+}
 .about-content {
     display: flex;
     align-items: flex-start;
@@ -1239,6 +1244,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
