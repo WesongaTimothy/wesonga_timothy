@@ -276,31 +276,28 @@ document.addEventListener('DOMContentLoaded', () => {
             // Graduation Gallery Slider
 const galleryImages = [
     "IMG1.jpg", "IMG2.jpg", "IMG3.jpg", "IMG4.jpg", "IMG5.jpg",
-    "IMG6.jpg", "IMG7.jpg", "IMG8.jpg", "IMG9.jpg", "IMG10.jpg",
+    "IMG6.jpg", "IMG7.png", "IMG8.png", "IMG9.png", "IMG10.jpg",
     "IMG11.jpg", "IMG12.jpg", "IMG13.jpg", "IMG14.jpg", "IMG15.jpg",
     "IMG16.jpg", "IMG17.jpg", "IMG18.jpg", "IMG19.jpg", "IMG20.jpg", "IMG21.jpg"
 ];
 
-            let currentIndex = 0;
+let currentIndex = 0;
 const galleryImg = document.getElementById("gallery-img");
 
 setInterval(() => {
-    // Fade out
-    galleryImg.style.opacity = 0;
-
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    galleryImg.style.opacity = 0; // fade out
     setTimeout(() => {
-        // Change image
-        currentIndex = (currentIndex + 1) % galleryImages.length;
         galleryImg.src = galleryImages[currentIndex];
+        galleryImg.style.opacity = 1; // fade in
+    }, 400); // half of 4 seconds for smooth fade
+}, 4000); // change image every 4 seconds
 
-        // Fade in
-        galleryImg.style.opacity = 1;
-    }, 500); // half second fade
-}, 3000); // change image every 3 seconds
             });
         });
     }
 });
+
 
 
 
