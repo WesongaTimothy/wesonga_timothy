@@ -188,11 +188,12 @@ nav {
     color: var(--text-color);
 }
 .logo-text {
-    background-color: #ADD8E6; /* Light blue */
-    color: #1C3986;               /* Black text for contrast */
-    padding: 0.3rem 0.6rem;    /* Small padding around text */
-    border-radius: 5px;        /* Rounded corners */
-    display: inline-block;     /* Makes padding apply nicely */
+    background-color: var(--primary-color); /* Use primary color */
+    color: var(--light-text);               /* White text for contrast */
+    padding: 0.3rem 0.6rem;                 /* Small padding */
+    border-radius: 5px;                     /* Rounded corners */
+    display: inline-block;                  /* Proper padding effect */
+    font-weight: 700;                       /* Optional: make logo text bold */
 }
 
 .nav-links {
@@ -1239,6 +1240,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
