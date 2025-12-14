@@ -569,7 +569,7 @@ nav {
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;        /* preserve full image within container */
+    object-fit: cover;        /* preserve full image within container */
     object-position: center;
 }
 @media (max-width: 768px) {
@@ -1091,6 +1091,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
