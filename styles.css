@@ -884,23 +884,21 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
-.gallery-section {
-    padding: 4rem 2rem;
-    background-color: #f5f8ff; /* light background */
-    text-align: center;
-}
-
 .graduation-gallery {
-    max-width: 600px;
-    margin: 2rem auto 0;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 .graduation-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: opacity 0.3s ease-in-out;
+    width: calc(20% - 8px); /* 5 images per row */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.graduation-gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -1261,6 +1259,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
