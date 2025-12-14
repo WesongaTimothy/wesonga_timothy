@@ -272,6 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
+            
             // Graduation Gallery Slider
 const galleryImages = [
     "IMG1.jpg", "IMG2.jpg", "IMG3.jpg", "IMG4.jpg", "IMG5.jpg",
@@ -295,6 +296,7 @@ setInterval(() => {
         });
     }
 });
+
 
 
 
