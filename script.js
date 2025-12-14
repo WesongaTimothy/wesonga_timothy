@@ -281,21 +281,27 @@ const galleryImages = [
     "IMG16.jpg", "IMG17.jpg", "IMG18.jpg", "IMG19.jpg", "IMG20.jpg", "IMG21.jpg"
 ];
 
-let currentIndex = 0;
+            let currentIndex = 0;
 const galleryImg = document.getElementById("gallery-img");
 
 setInterval(() => {
-    currentIndex = (currentIndex + 1) % galleryImages.length;
-    galleryImg.style.opacity = 0; // fade out
+    // Fade out
+    galleryImg.style.opacity = 0;
+
     setTimeout(() => {
+        // Change image
+        currentIndex = (currentIndex + 1) % galleryImages.length;
         galleryImg.src = galleryImages[currentIndex];
-        galleryImg.style.opacity = 1; // fade in
-    }, 150); // half of 0.3s for smooth fade
-}, 300); // change image every 0.3 seconds
+
+        // Fade in
+        galleryImg.style.opacity = 1;
+    }, 500); // half second fade
+}, 3000); // change image every 3 seconds
             });
         });
     }
 });
+
 
 
 
