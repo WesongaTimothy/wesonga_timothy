@@ -273,10 +273,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
             // Graduation gallery slider
-const graduationImages = [];
-for (let i = 1; i <= 21; i++) {
-    graduationImages.push(`Graduation/IMG${i}.jpg`);
-}
+const graduationImages = [
+    "Graduation/IMG1.jpg",
+    "Graduation/IMG2.jpg",
+    "Graduation/IMG3.jpg",
+    "Graduation/IMG4.jpg",
+    "Graduation/IMG5.jpg",
+    "Graduation/IMG6.jpg",
+    "Graduation/IMG7.png",
+    "Graduation/IMG8.png",
+    "Graduation/IMG9.png",
+    "Graduation/IMG10.jpg",
+    "Graduation/IMG11.jpg",
+    "Graduation/IMG12.jpg",
+    "Graduation/IMG13.jpg",
+    "Graduation/IMG14.jpg",
+    "Graduation/IMG15.jpg",
+    "Graduation/IMG16.jpg",
+    "Graduation/IMG17.jpg",
+    "Graduation/IMG18.jpg",
+    "Graduation/IMG19.jpg",
+    "Graduation/IMG20.jpg",
+    "Graduation/IMG21.jpg"
+];
 
 const galleryContainer = document.querySelector('.graduation-gallery');
 if (galleryContainer) {
@@ -284,17 +303,17 @@ if (galleryContainer) {
     const imgElement = document.createElement('img');
     imgElement.src = graduationImages[currentIndex];
     imgElement.alt = `Graduation IMG${currentIndex + 1}`;
-    imgElement.style.width = '100%';
     galleryContainer.appendChild(imgElement);
 
     setInterval(() => {
         currentIndex = (currentIndex + 1) % graduationImages.length;
         imgElement.src = graduationImages[currentIndex];
         imgElement.alt = `Graduation IMG${currentIndex + 1}`;
-    }, 300); // every 0.3 seconds
+    }, 300); // switch every 0.3 seconds
 }
             });
         });
     }
 });
+
 
