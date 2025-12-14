@@ -233,21 +233,91 @@ nav {
     transition: var(--transition);
 }
 
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-top: 10rem;
+/* Container for Home Section */
+.hero-container {
+  max-width: 1200px;          /* matches About section width */
+  margin: 0 auto;             /* centers horizontally */
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;        /* vertical alignment of text + image */
+  gap: 40px;                  /* space between text and image */
+  flex-wrap: wrap;            /* responsive layout */
 }
 
-.hero-content {
-    flex: 1;
-    padding-right: 2rem;
+/* Text Section */
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Roles / Expertise */
+.roles {
+  margin: 15px 0;
+}
+.role-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.role {
+  background-color: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Image Section */
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* WhatsApp Button */
+.whatsapp-link {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+.whatsapp-link:hover {
+  background-color: #128C7E;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  margin-top: 20px;
+}
+.cta-buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+.secondary-btn {
+  background-color: #6c757d;
+  color: white;
+}
+.secondary-btn:hover {
+  background-color: #495057;
 }
 
 .animate-text {
@@ -1089,4 +1159,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
