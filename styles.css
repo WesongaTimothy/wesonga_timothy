@@ -235,6 +235,36 @@ nav {
 }
 
 /* Hero Section */
+
+/* Hero Name Styling */
+.hero-name {
+    font-size: 3rem;         /* make it bigger */
+    font-weight: 800;        /* make it bold */
+    color: var(--primary-color); /* stand out from background */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-name {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 2rem;
+    }
+}
 .hero {
     min-height: 100vh;
     display: flex;
@@ -1080,3 +1110,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
