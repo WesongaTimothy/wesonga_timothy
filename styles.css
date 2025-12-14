@@ -186,7 +186,7 @@ nav {
 .logo-text {
     background-color: #FFD700; /* gold background, change to any color you want */
     color: #000; /* text color */
-    padding: 0.2rem 0.5rem; /* small padding around text */
+    padding: 0.9rem 0.5rem; /* small padding around text */
     border-radius: 5px; /* optional: rounded corners */
 }
 
@@ -1234,6 +1234,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
