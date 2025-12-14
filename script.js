@@ -272,48 +272,29 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
-            // Graduation gallery slider
-const graduationImages = [
-    "Graduation/IMG1.jpg",
-    "Graduation/IMG2.jpg",
-    "Graduation/IMG3.jpg",
-    "Graduation/IMG4.jpg",
-    "Graduation/IMG5.jpg",
-    "Graduation/IMG6.jpg",
-    "Graduation/IMG7.png",
-    "Graduation/IMG8.png",
-    "Graduation/IMG9.png",
-    "Graduation/IMG10.jpg",
-    "Graduation/IMG11.jpg",
-    "Graduation/IMG12.jpg",
-    "Graduation/IMG13.jpg",
-    "Graduation/IMG14.jpg",
-    "Graduation/IMG15.jpg",
-    "Graduation/IMG16.jpg",
-    "Graduation/IMG17.jpg",
-    "Graduation/IMG18.jpg",
-    "Graduation/IMG19.jpg",
-    "Graduation/IMG20.jpg",
-    "Graduation/IMG21.jpg"
+            // Graduation Gallery Slider
+const galleryImages = [
+    "IMG1.jpg", "IMG2.jpg", "IMG3.jpg", "IMG4.jpg", "IMG5.jpg",
+    "IMG6.jpg", "IMG7.jpg", "IMG8.jpg", "IMG9.jpg", "IMG10.jpg",
+    "IMG11.jpg", "IMG12.jpg", "IMG13.jpg", "IMG14.jpg", "IMG15.jpg",
+    "IMG16.jpg", "IMG17.jpg", "IMG18.jpg", "IMG19.jpg", "IMG20.jpg", "IMG21.jpg"
 ];
 
-const galleryContainer = document.querySelector('.graduation-gallery');
-if (galleryContainer) {
-    let currentIndex = 0;
-    const imgElement = document.createElement('img');
-    imgElement.src = graduationImages[currentIndex];
-    imgElement.alt = `Graduation IMG${currentIndex + 1}`;
-    galleryContainer.appendChild(imgElement);
+let currentIndex = 0;
+const galleryImg = document.getElementById("gallery-img");
 
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % graduationImages.length;
-        imgElement.src = graduationImages[currentIndex];
-        imgElement.alt = `Graduation IMG${currentIndex + 1}`;
-    }, 300); // switch every 0.3 seconds
-}
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    galleryImg.style.opacity = 0; // fade out
+    setTimeout(() => {
+        galleryImg.src = galleryImages[currentIndex];
+        galleryImg.style.opacity = 1; // fade in
+    }, 150); // half of 0.3s for smooth fade
+}, 300); // change image every 0.3 seconds
             });
         });
     }
 });
+
 
 
