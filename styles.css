@@ -578,25 +578,24 @@ nav {
     object-fit: cover;
     display: block;
 }
-
 @media (max-width: 1024px) {
     .image-container {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
 
 @media (max-width: 768px) {
     .image-container {
-        width: 250px;
-        height: 250px;
+        width: 180px;
+        height: 180px;
     }
 }
 
 @media (max-width: 480px) {
     .image-container {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -1243,6 +1242,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
