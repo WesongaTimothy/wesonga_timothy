@@ -273,37 +273,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
             
-            // Graduation Gallery Slider
-const galleryImages = [
-    "IMG1.jpg", "IMG2.jpg", "IMG3.jpg", "IMG4.jpg", "IMG5.jpg",
-    "IMG6.jpg", "IMG7.png", "IMG8.png", "IMG9.png", "IMG10.jpg",
-    "IMG11.jpg", "IMG12.jpg", "IMG13.jpg", "IMG14.jpg", "IMG15.jpg",
-    "IMG16.jpg", "IMG17.jpg", "IMG18.jpg", "IMG19.jpg", "IMG20.jpg", "IMG21.jpg"
-];
-            
-const slider = document.querySelector('.graduation-slider');
+           <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-// Create img elements for all images
-galleryImages.forEach((src, index) => {
-    const img = document.createElement('img');
-    img.src = src;
-    if(index === 0) img.classList.add('active'); // first image visible
-    slider.appendChild(img);
+    const galleryImages = [
+        "IMG1.jpg","IMG2.jpg","IMG3.jpg","IMG4.jpg","IMG5.jpg",
+        "IMG6.jpg","IMG7.png","IMG8.png","IMG9.png","IMG10.jpg",
+        "IMG11.jpg","IMG12.jpg","IMG13.jpg","IMG14.jpg","IMG15.jpg",
+        "IMG16.jpg","IMG17.jpg","IMG18.jpg","IMG19.jpg","IMG20.jpg","IMG21.jpg"
+    ];
+
+    const track = document.getElementById("slide-track");
+
+    galleryImages.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        track.appendChild(img);
+    });
+
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % galleryImages.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }, 6000); // best viewing speed
+
 });
-
-let currentIndex = 0;
-const imgs = slider.querySelectorAll('img');
-
-setInterval(() => {
-    imgs[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % imgs.length;
-    imgs[currentIndex].classList.add('active');
-}, 4000); // every 4 seconds
-
+</script>
             });
         });
     }
 });
+
 
 
 
