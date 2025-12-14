@@ -699,6 +699,31 @@ nav {
     margin-top: 3rem;
 }
 
+/* Make project card images fit properly */
+.project-image {
+    width: 100%;
+    height: 180px;               /* fixed card height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;            /* prevent overflow */
+    border-radius: var(--border-radius);
+    background-color: #fff;      /* optional: clean background */
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* preserve full image within container */
+    object-position: center;
+}
+@media (max-width: 768px) {
+    .project-image {
+        height: 140px;   /* slightly smaller on phones */
+    }
+}
+
+
 /* Publications Section */
 .publications-list {
     max-width: 900px;
@@ -1169,6 +1194,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
