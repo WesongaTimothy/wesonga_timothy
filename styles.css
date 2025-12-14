@@ -955,6 +955,51 @@ textarea:focus {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+.gallery-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.gallery-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Slider Container */
+.graduation-slider {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Sliding Images */
+.image-wrapper {
+  display: flex;
+  width: calc(100% * 21);
+  animation: slideImages 42s steps(21) infinite; /* 2s per image */
+}
+
+.image-wrapper img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slideImages {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 
 
 
@@ -1316,6 +1361,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
