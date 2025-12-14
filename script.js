@@ -272,6 +272,29 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
+            // Graduation gallery slider
+const graduationImages = [];
+for (let i = 1; i <= 21; i++) {
+    graduationImages.push(`Graduation/IMG${i}.jpg`);
+}
+
+const galleryContainer = document.querySelector('.graduation-gallery');
+if (galleryContainer) {
+    let currentIndex = 0;
+    const imgElement = document.createElement('img');
+    imgElement.src = graduationImages[currentIndex];
+    imgElement.alt = `Graduation IMG${currentIndex + 1}`;
+    imgElement.style.width = '100%';
+    galleryContainer.appendChild(imgElement);
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % graduationImages.length;
+        imgElement.src = graduationImages[currentIndex];
+        imgElement.alt = `Graduation IMG${currentIndex + 1}`;
+    }, 300); // every 0.3 seconds
+}
+            });
         });
     }
 });
+
