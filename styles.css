@@ -740,7 +740,7 @@ nav {
 .publications-list {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 2rem;  /* container padding */
 }
 
 .publication-item {
@@ -751,11 +751,8 @@ nav {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
-}
-
-.publication-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;    /* add inner spacing */
+    gap: 1rem;        /* optional: space between year and content */
 }
 
 .publication-year {
@@ -768,41 +765,12 @@ nav {
     align-items: center;
     justify-content: center;
     min-width: 120px;
+    border-radius: var(--border-radius) 0 0 var(--border-radius); /* optional: round only left side */
 }
 
 .publication-content {
-    padding: 1.5rem;
+    padding: 1rem;   /* reduce padding if needed to fit inside */
     flex: 1;
-}
-
-.publication-journal {
-    color: var(--primary-color);
-    font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
-.publication-abstract {
-    margin-bottom: 1rem;
-}
-
-.publication-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-}
-
-.publication-link i {
-    transition: transform 0.3s;
-}
-
-.publication-link:hover i {
-    transform: translateX(5px);
-}
-
-.publications-cta {
-    text-align: center;
-    margin-top: 3rem;
 }
 
 /* Contact Section */
@@ -1244,6 +1212,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
