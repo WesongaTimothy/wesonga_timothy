@@ -883,78 +883,8 @@ textarea:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
-.gallery-slider {
-  overflow: hidden;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
 
-.gallery-track {
-  display: flex;
-  width: calc(21 * 200px); /* 21 images of 200px each */
-  animation: slideGallery 21s linear infinite;
-}
-
-.gallery-track img {
-  width: 200px;
-  height: 150px;
-  object-fit: contain;
-  margin-right: 10px;
-  border-radius: 8px;
-  image-rendering: auto;
-}
-
-/* Animation */
-@keyframes slideGallery {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* Gallery Header */
-.gallery-header {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.gallery-header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-header p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Graduation Slider */
-.graduation-slider {
-    width: 100%;
-    max-width: 900px;
-    height: 500px; /* adjust as needed */
-    overflow: hidden;
-    margin: 0 auto 2rem auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    position: relative;
-}
-
-.image-wrapper {
-    display: flex;
-    width: calc(100% * 21); /* 21 images */
-    animation: slideImages 42s steps(21) infinite; /* 21 images x 2s = 42s total */
-}
-
-.image-wrapper img {
-    width: 100%;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-
-@keyframes slideImages {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
+/* Gallery Section */
 .gallery-section {
   text-align: center;
   padding: 2rem 1rem;
@@ -970,38 +900,38 @@ textarea:focus {
   color: #555;
 }
 
-/* Slider Container */
+/* Graduation Slider Container */
 .graduation-slider {
   width: 100%;
   max-width: 900px;
   height: 500px;
-  overflow: hidden;
   margin: 2rem auto;
+  overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   position: relative;
 }
 
-/* Sliding Images */
+/* Sliding Images Wrapper */
 .image-wrapper {
   display: flex;
-  width: calc(100% * 21);
-  animation: slideImages 42s steps(21) infinite; /* 2s per image */
+  width: calc(100% * 21); /* 21 images */
+  animation: slideImages 63s steps(21) infinite; /* 3s per image */
 }
 
+/* Each Image */
 .image-wrapper img {
   width: 100%;
   flex-shrink: 0;
-  object-fit: cover;
+  object-fit: cover; /* keeps images full while maintaining aspect */
+  border-right: 2px solid #fff; /* optional spacing between images */
 }
 
-/* Keyframes for sliding effect */
+/* Sliding Animation */
 @keyframes slideImages {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
-
-
 
 /* Footer */
 footer {
@@ -1361,6 +1291,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
