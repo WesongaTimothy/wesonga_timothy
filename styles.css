@@ -898,15 +898,17 @@ textarea:focus {
 .slide-track {
     display: flex;
     height: 100%;
-    transition: transform 1s ease-in-out; /* BEST speed */
+    width: 100%;
+    transition: transform 1s ease-in-out;
 }
 
 .slide-track img {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     object-fit: cover;
     flex-shrink: 0;
 }
+
 
 /* Footer */
 footer {
@@ -1266,6 +1268,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
