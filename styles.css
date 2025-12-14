@@ -550,9 +550,9 @@ nav {
 
 .image-container {
     position: relative;
-    z-index: 2;
-    width: 350px;       /* increase width */
-    height: 350px;      /* increase height */
+    z-index: 10; /* higher than .shape */
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -1169,5 +1169,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
