@@ -351,12 +351,13 @@ nav {
 .image-container {
     position: relative;
     z-index: 2;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--shadow);
     border: 5px solid white;
+     margin: 0 auto;         /* center if needed */
 }
 
 .profile-image {
@@ -1242,6 +1243,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
