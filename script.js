@@ -277,36 +277,29 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".image-wrapper");
     const images = document.querySelectorAll(".image-wrapper img");
-
-    let currentIndex = 0;
+    let index = 0;
 
     function getImageHeight() {
         return window.innerWidth <= 768 ? 220 : 360;
     }
 
     setInterval(() => {
-        currentIndex++;
+        index++;
 
-        if (currentIndex >= images.length) {
-            currentIndex = 0;
-            // Reset without transition for smooth loop
-            wrapper.style.transition = "none";
-            wrapper.style.transform = "translateY(0)";
-            requestAnimationFrame(() => {
-                wrapper.style.transition = "transform 1s linear";
-            });
-        } else {
-            wrapper.style.transition = "transform 1s linear";
-            wrapper.style.transform = `translateY(-${currentIndex * getImageHeight()}px)`;
+        if (index >= images.length) {
+            index = 0;
         }
-    }, 4000); // every 4 seconds
+
+        wrapper.style.transform = `translateY(-${index * getImageHeight()}px)`;
+    }, 4000); // 4 seconds per image
 });
 </script>
-        });
+           });
             });
         });
     }
 });
+
 
 
 
