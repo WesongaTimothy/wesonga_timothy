@@ -469,6 +469,48 @@ nav {
         max-width: 300px;
     }
 }
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.stats-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    display: block;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}
 
 /* Expertise Section */
 .expertise-grid {
@@ -1290,6 +1332,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
