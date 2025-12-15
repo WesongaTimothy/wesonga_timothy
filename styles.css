@@ -919,8 +919,8 @@ textarea:focus {
 }
 
 .slide-track img {
-  width: 280px;
-  height: 450px;
+  width: 320px;
+  height: 370px;
   object-fit: cover;
   margin-right: 12px;
   border-radius: 12px;
@@ -1290,6 +1290,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
