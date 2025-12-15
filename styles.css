@@ -470,7 +470,6 @@ nav {
     }
 }
 
-
 /* Expertise Section */
 .expertise-grid {
     display: grid;
@@ -1291,6 +1290,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
