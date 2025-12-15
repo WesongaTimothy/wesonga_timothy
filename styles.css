@@ -919,11 +919,12 @@ textarea:focus {
 }
 
 .slide-track img {
-  width: 300px;
-  height: 200px;
-  object-fit: contain;
-  margin-right: 5px;
-  border-radius: 8px;
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 12px;
+  background-color: #f8f9fa; /* optional: adds background for empty space */
 }
 
 @keyframes scroll {
@@ -1289,6 +1290,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
