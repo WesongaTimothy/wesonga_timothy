@@ -885,6 +885,7 @@ textarea:focus {
 }
 
 /* ===== Gallery Section ===== */
+/* ===== Gallery Section ===== */
 #gallery {
   padding: 60px 16px;
   text-align: center;
@@ -1305,6 +1306,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
