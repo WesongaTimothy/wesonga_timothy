@@ -915,11 +915,11 @@ textarea:focus {
 .slide-track {
   display: flex;
   width: calc(300px * 42); /* 21 images * 2 repeated = 42 */
-  animation: scroll 30s linear infinite; /* 2 sec per image ~ 4s per original image */
+  animation: scroll 25s linear infinite; /* 2 sec per image ~ 4s per original image */
 }
 
 .slide-track img {
-  width: 320px;
+  width: 250px;
   height: 289px;
   object-fit: cover;
   margin-right: 12px;
@@ -1290,6 +1290,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
