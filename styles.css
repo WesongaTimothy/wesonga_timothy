@@ -885,6 +885,27 @@ textarea:focus {
 }
 
 /* Gallery container */
+#gallery {
+    padding: 60px 20px;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-header h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.gallery-header p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .gallery {
     padding: 60px 20px;
     background: #f9fafb;
@@ -1295,6 +1316,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
