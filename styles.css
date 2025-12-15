@@ -920,9 +920,9 @@ textarea:focus {
 
 .slide-track img {
   width: 270px;
-  height: 320px;
+  height: 420px;
   object-fit: cover;
-  margin-right: 10px;
+  margin-right: 12px;
   border-radius: 12px;
   background-color: #f8f9fa; /* optional: adds background for empty space */
 }
@@ -1290,6 +1290,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
