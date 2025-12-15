@@ -915,7 +915,7 @@ textarea:focus {
 .slide-track {
   display: flex;
   width: calc(300px * 42); /* 21 images * 2 repeated = 42 */
-  animation: scroll 84s linear infinite; /* 2 sec per image ~ 4s per original image */
+  animation: scroll 30s linear infinite; /* 2 sec per image ~ 4s per original image */
 }
 
 .slide-track img {
@@ -1290,6 +1290,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
