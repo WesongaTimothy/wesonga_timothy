@@ -273,24 +273,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
             
-          <script>
+         <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".image-wrapper");
     const images = document.querySelectorAll(".image-wrapper img");
-    let index = 0;
-
-    function getImageHeight() {
-        return window.innerWidth <= 768 ? 220 : 360;
-    }
+    let currentIndex = 0;
 
     setInterval(() => {
-        index++;
+        // Hide current image
+        images[currentIndex].style.opacity = 0;
 
-        if (index >= images.length) {
-            index = 0;
-        }
+        // Move to next image
+        currentIndex = (currentIndex + 1) % images.length;
 
-        wrapper.style.transform = `translateY(-${index * getImageHeight()}px)`;
+        // Show next image
+        images[currentIndex].style.opacity = 1;
     }, 4000); // 4 seconds per image
 });
 </script>
@@ -299,6 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 
 
 
