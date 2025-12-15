@@ -283,27 +283,26 @@ document.addEventListener("DOMContentLoaded", () => {
         "IMG16.jpg","IMG17.jpg","IMG18.jpg","IMG19.jpg","IMG20.jpg","IMG21.jpg"
     ];
 
-    const track = document.getElementById("slide-track");
+   const galleryWrapper = document.querySelector('.image-wrapper');
+const galleryImages = document.querySelectorAll('.image-wrapper img');
 
-    galleryImages.forEach(src => {
-        const img = document.createElement("img");
-        img.src = src;
-        track.appendChild(img);
-    });
+let currentIndex = 0;
+const imageHeight = 350; // must match CSS height
 
-    let index = 0;
+setInterval(() => {
+    currentIndex++;
 
-    setInterval(() => {
-        index = (index + 1) % galleryImages.length;
-        track.style.transform = `translateX(-${index * 100}%)`;
-    }, 6000); // best viewing speed
+    if (currentIndex >= galleryImages.length) {
+        currentIndex = 0;
+    }
+    galleryWrapper.style.transform = `translateY(-${currentIndex * imageHeight}px)`;
+}, 6000); // 6 seconds
 
-});
-</script>
             });
         });
     }
 });
+
 
 
 
