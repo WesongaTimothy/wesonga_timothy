@@ -273,36 +273,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
             
-        const galleryImages = [
-    "IMG1.jpg","IMG2.jpg","IMG3.jpg","IMG4.jpg","IMG5.jpg",
-    "IMG6.jpg","IMG7.png","IMG8.png","IMG9.png","IMG10.jpg",
-    "IMG11.jpg","IMG12.jpg","IMG13.jpg","IMG14.jpg","IMG15.jpg",
-    "IMG16.jpg","IMG17.jpg","IMG18.jpg","IMG19.jpg","IMG20.jpg","IMG21.jpg"
-];
+       <!-- ===== JavaScript ===== -->
+  <script>
+    const slides = document.querySelectorAll('.image-wrapper img');
+    let currentIndex = 0;
 
-const slider = document.querySelector('.graduation-slider');
+    function showNextSlide() {
+      // Hide current image
+      slides[currentIndex].classList.remove('active');
 
-// Create img elements for all images
-galleryImages.forEach((src, index) => {
-    const img = document.createElement('img');
-    img.src = src;
-    if(index === 0) img.classList.add('active'); // first image visible
-    slider.appendChild(img);
-});
+      // Move to next image
+      currentIndex = (currentIndex + 1) % slides.length;
 
-let currentIndex = 0;
-const imgs = slider.querySelectorAll('img');
+      // Show next image
+      slides[currentIndex].classList.add('active');
+    }
 
-setInterval(() => {
-    imgs[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % imgs.length;
-    imgs[currentIndex].classList.add('active');
-}, 4000); // every 4 seconds
+    // Change slide every 3 seconds
+    setInterval(showNextSlide, 3000);
+  </script>
            });
             });
         });
     }
 });
+
 
 
 
