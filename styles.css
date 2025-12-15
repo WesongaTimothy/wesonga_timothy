@@ -884,9 +884,9 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
 }
 
-/* Gallery container */
+/* ===== Gallery Header ===== */
 #gallery {
-    padding: 60px 20px;
+    padding: 60px 16px;
 }
 
 .gallery-header {
@@ -896,80 +896,51 @@ textarea:focus {
 
 .gallery-header h2 {
     font-size: 2rem;
-    margin-bottom: 8px;
 }
 
 .gallery-header p {
-    font-size: 1rem;
+    max-width: 720px;
+    margin: 8px auto 0;
     color: #555;
-    max-width: 700px;
+}
+
+/* ===== Slider ===== */
+.graduation-slider {
+    height: 360px;
+    max-width: 900px;
     margin: 0 auto;
-}
-
-.gallery {
-    padding: 60px 20px;
-    background: #f9fafb;
-    text-align: center;
-}
-
-/* Slider window */
-.gallery-slider {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
-/* Moving track */
-.gallery-track {
-    display: flex;
-    width: calc(100% * 5);
-    animation: gallerySlide 25s infinite ease-in-out;
-}
-
-/* Images */
-.gallery-track img {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 12px;
-}
-
-/* Slide animation */
-@keyframes gallerySlide {
-    0%   { transform: translateX(0); }
-    20%  { transform: translateX(-100%); }
-    40%  { transform: translateX(-200%); }
-    60%  { transform: translateX(-300%); }
-    80%  { transform: translateX(-400%); }
-    100% { transform: translateX(0); }
-}
-@media (max-width: 768px) {
-  .graduation-slider {
-    height: 350px;            /* visible area */
-    overflow: hidden;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 12px;
-}
-
+/* ===== Vertical movement ===== */
 .image-wrapper {
     display: flex;
     flex-direction: column;
-    transition: transform 1s ease-in-out;
+    will-change: transform;
 }
 
+/* ===== Images ===== */
 .image-wrapper img {
     width: 100%;
-    height: 350px;
+    height: 360px;
     object-fit: cover;
-    border-radius: 12px;
     flex-shrink: 0;
+    border-radius: 14px;
 }
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+    .graduation-slider {
+        height: 220px;
+    }
+
+    .image-wrapper img {
+        height: 220px;
+        border-radius: 10px;
+    }
 }
+
 
 /* Footer */
 footer {
@@ -1329,6 +1300,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
