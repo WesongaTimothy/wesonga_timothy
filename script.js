@@ -273,35 +273,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
             
-           <script>
-document.addEventListener("DOMContentLoaded", () => {
+          document.addEventListener("DOMContentLoaded", () => {
+    const galleryWrapper = document.querySelector('.image-wrapper');
+    const images = document.querySelectorAll('.image-wrapper img');
 
-    const galleryImages = [
-        "IMG1.jpg","IMG2.jpg","IMG3.jpg","IMG4.jpg","IMG5.jpg",
-        "IMG6.jpg","IMG7.png","IMG8.png","IMG9.png","IMG10.jpg",
-        "IMG11.jpg","IMG12.jpg","IMG13.jpg","IMG14.jpg","IMG15.jpg",
-        "IMG16.jpg","IMG17.jpg","IMG18.jpg","IMG19.jpg","IMG20.jpg","IMG21.jpg"
-    ];
+    let currentIndex = 0;
 
-   const galleryWrapper = document.querySelector('.image-wrapper');
-const galleryImages = document.querySelectorAll('.image-wrapper img');
-
-let currentIndex = 0;
-const imageHeight = 350; // must match CSS height
-
-setInterval(() => {
-    currentIndex++;
-
-    if (currentIndex >= galleryImages.length) {
-        currentIndex = 0;
+    function getImageHeight() {
+        return window.innerWidth <= 768 ? 220 : 350;
     }
-    galleryWrapper.style.transform = `translateY(-${currentIndex * imageHeight}px)`;
-}, 6000); // 6 seconds
 
+    setInterval(() => {
+        currentIndex++;
+
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+            galleryWrapper.style.transform = "translateY(0)";
+        } else {
+            galleryWrapper.style.transform =
+                `translateY(-${currentIndex * getImageHeight()}px)`;
+        }
+    }, 4000); // 4 seconds
+});
             });
         });
     }
 });
+
 
 
 
