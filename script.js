@@ -273,14 +273,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 emailInput.placeholder = 'Your email address';
             }, 3000);
             
-          document.addEventListener("DOMContentLoaded", () => {
-    const galleryWrapper = document.querySelector('.image-wrapper');
-    const images = document.querySelectorAll('.image-wrapper img');
+          <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const wrapper = document.querySelector(".image-wrapper");
+    const images = document.querySelectorAll(".image-wrapper img");
 
     let currentIndex = 0;
 
     function getImageHeight() {
-        return window.innerWidth <= 768 ? 220 : 350;
+        return window.innerWidth <= 768 ? 220 : 360;
     }
 
     setInterval(() => {
@@ -288,17 +289,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (currentIndex >= images.length) {
             currentIndex = 0;
-            galleryWrapper.style.transform = "translateY(0)";
+            // Reset without transition for smooth loop
+            wrapper.style.transition = "none";
+            wrapper.style.transform = "translateY(0)";
+            requestAnimationFrame(() => {
+                wrapper.style.transition = "transform 1s linear";
+            });
         } else {
-            galleryWrapper.style.transform =
-                `translateY(-${currentIndex * getImageHeight()}px)`;
+            wrapper.style.transition = "transform 1s linear";
+            wrapper.style.transform = `translateY(-${currentIndex * getImageHeight()}px)`;
         }
-    }, 4000); // 4 seconds
+    }, 4000); // every 4 seconds
 });
+</script>
+        });
             });
         });
     }
 });
+
 
 
 
