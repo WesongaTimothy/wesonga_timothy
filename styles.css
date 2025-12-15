@@ -886,9 +886,9 @@ textarea:focus {
 
 /* ===== Gallery Section ===== */
 #gallery {
-  padding: 50px 16px;
-  text-align: center;
+  padding: 40px 16px;
   background-color: #f8f9fa;
+  text-align: center;
 }
 
 .gallery-header h2 {
@@ -904,54 +904,31 @@ textarea:focus {
 }
 
 .graduation-slider {
+  overflow: hidden;
   position: relative;
   width: 90%;
   max-width: 1000px;
-  height: 250px;
   margin: 20px auto;
-  overflow: hidden;
-  border-radius: 14px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
-.image-wrapper {
-  display: flex;
-  animation: scroll 30s linear infinite;
-}
-
-.image-wrapper img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  margin-right: 10px;
   border-radius: 12px;
 }
 
-/* Infinite scroll animation */
+.slide-track {
+  display: flex;
+  width: calc(300px * 42); /* 21 images * 2 repeated = 42 */
+  animation: scroll 84s linear infinite; /* 2 sec per image ~ 4s per original image */
+}
+
+.slide-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 21 - 10px * 21)); }
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .graduation-slider {
-    height: 200px;
-  }
-  .image-wrapper img {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-@media (max-width: 768px) {
-  .graduation-slider {
-    height: 150px;
-  }
-  .image-wrapper img {
-    width: 120px;
-    height: 120px;
-  }
+  100% { transform: translateX(-50%); } /* scroll half the track for continuous effect */
 }
 
 /* Footer */
@@ -1312,6 +1289,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
