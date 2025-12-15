@@ -968,8 +968,8 @@ footer {
     text-align: center;         /* center the text */
     padding: 1.2rem 0;          /* vertical spacing */
     background-color: #0d1b2a;  /* match footer background */
-    color: #FFD700;             /* footer text color */
-    font-size: 1.25rem;
+    color: #FFFFFF;             /* footer text color */
+    font-size: 1.15rem;
     opacity: 1.5;
     width: 100%;                /* ensure it spans full width */
     margin-top: 1.3rem;           /* optional spacing from above content */
@@ -1316,6 +1316,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
