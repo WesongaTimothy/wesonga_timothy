@@ -885,6 +885,32 @@ textarea:focus {
 }
 
 /* ===== Gallery Section ===== */
+/* Gallery Header Styling */
+.gallery-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* smooth blue gradient */
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    color: white; /* text color */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #ffffff; /* white */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.gallery-header p {
+    font-size: 1.1rem;
+    color: #e0e7ff; /* lighter blue for paragraph */
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
 #gallery {
   padding: 40px 16px;
   background-color: #f8f9fa;
@@ -1290,6 +1316,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
