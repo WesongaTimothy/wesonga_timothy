@@ -903,30 +903,55 @@ textarea:focus {
   color: #555;
 }
 
-.graduation-carousel {
+.graduation-slider {
   position: relative;
   width: 90%;
-  max-width: 800px;
-  height: 450px;
+  max-width: 1000px;
+  height: 250px;
   margin: 20px auto;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.graduation-carousel img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+.image-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite;
 }
 
-.graduation-carousel img.active {
-  opacity: 1;
+.image-wrapper img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 21 - 10px * 21)); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .graduation-slider {
+    height: 200px;
+  }
+  .image-wrapper img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .graduation-slider {
+    height: 150px;
+  }
+  .image-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* Footer */
@@ -1287,6 +1312,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
