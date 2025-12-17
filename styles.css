@@ -1317,6 +1317,59 @@ footer {
     }
 }
 
+/* Bottom Layer */
+.bottom-layer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(90deg, #1b2f57, #264a87);
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 14px;
+}
+
+/* Content Layout */
+.bottom-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Scroll To Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2f80ed;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background: #1c5fd4;
+  transform: translateY(-4px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .bottom-content {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+
 
 
 
