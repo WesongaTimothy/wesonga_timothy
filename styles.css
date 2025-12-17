@@ -959,82 +959,72 @@ textarea:focus {
 }
 
 /* Footer */
-/* ===============================
-   Language Drop-up (Professional)
-   =============================== */
-
-.language-dropup {
+/* Dropup container */
+.dropup {
   position: relative;
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Drop-up button */
+/* Dropup button */
 .dropup-btn {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 8px 14px;
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  border-radius: 6px;
-  font-size: 14px;
-  color: maroon; /* Language text in maroon */
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  border-radius: 4px;
 }
 
-/* Arrow indicator */
-.dropup-btn::after {
-  content: " ▲";
-  font-size: 0.7em;
-  color: maroon;
-}
-
-/* Drop-up menu */
+/* Dropup content */
 .dropup-content {
   display: none;
   position: absolute;
-  bottom: 100%; /* Menu opens upwards */
+  bottom: 100%;
   left: 0;
-  background-color: #fff;
+  background-color: #f9f9f9;
   min-width: 160px;
-  margin: 6px 0 0;
-  padding: 0;
-  list-style: none;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 /* Language items */
-.dropup-content .lang-item a {
-  display: block;
-  padding: 10px 14px;
+.dropup-content li {
+  list-style: none;
+}
+
+.dropup-content li a {
+  padding: 8px 12px;
   text-decoration: none;
-  font-size: 14px;
-  color: maroon; /* Language text in maroon */
+  display: flex;
+  align-items: center;
 }
 
-/* Hover effect */
-.dropup-content .lang-item a:hover {
-  background-color: #f5f5f5;
+/* Flags spacing */
+.dropup-content li a img {
+  margin-right: 8px;
+  width: 20px;
+  height: auto;
 }
 
-/* Show drop-up on hover */
-.language-dropup:hover .dropup-content {
+/* Custom colors for each language */
+.lang-item.en a { color: #1E90FF; }  /* English - Dodger Blue */
+.lang-item.sw a { color: #228B22; }  /* Swahili - Forest Green */
+.lang-item.fr a { color: #FF4500; }  /* French - Orange Red */
+.lang-item.ar a { color: #800080; }  /* Arabic - Purple */
+.lang-item.de a { color: #DAA520; }  /* German - Goldenrod */
+
+/* Hover effect for all */
+.dropup-content li a:hover {
+  background-color: #007BFF; /* hover background */
+  color: white;              /* hover text color */
+  border-radius: 4px;
+}
+
+/* Show dropup on hover */
+.dropup:hover .dropup-content {
   display: block;
-}
-
-/* ===============================
-   Card / Section Styling
-   =============================== */
-
-.card {
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #fff;
 }
 
 /* ===============================
@@ -1458,6 +1448,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
