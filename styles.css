@@ -959,64 +959,87 @@ textarea:focus {
 }
 
 /* Footer */
-/* Language dropup*?
+/* ===============================
+   Language Drop-up (Professional)
+   =============================== */
+
 .language-dropup {
   position: relative;
   display: inline-block;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Drop-up button */
 .dropup-btn {
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 6px 12px;
+  padding: 8px 14px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: maroon; /* Language text in maroon */
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-/* Optional arrow styling */
-.dropup-btn:after {
+/* Arrow indicator */
+.dropup-btn::after {
   content: " ▲";
   font-size: 0.7em;
+  color: maroon;
 }
 
+/* Drop-up menu */
 .dropup-content {
   display: none;
   position: absolute;
-  bottom: 100%; /* Key change: menu appears above the button */
+  bottom: 100%; /* Menu opens upwards */
   left: 0;
   background-color: #fff;
-  min-width: 140px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 100;
-  margin: 0;
+  min-width: 160px;
+  margin: 6px 0 0;
   padding: 0;
   list-style: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
+/* Language items */
 .dropup-content .lang-item a {
   display: block;
-  padding: 8px 12px;
+  padding: 10px 14px;
   text-decoration: none;
-  color: #333;
+  font-size: 14px;
+  color: maroon; /* Language text in maroon */
 }
-/* Card / Section */
+
+/* Hover effect */
+.dropup-content .lang-item a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Show drop-up on hover */
+.language-dropup:hover .dropup-content {
+  display: block;
+}
+
+/* ===============================
+   Card / Section Styling
+   =============================== */
+
 .card {
   border: 1px solid #ccc;
   padding: 16px;
   border-radius: 8px;
-  background: #fff;
+  background-color: #fff;
 }
 
-.dropup-content .lang-item a:hover {
-  background-color: #f0f0f0;
-}
-
-/* Show menu on hover */
-.language-dropup:hover .dropup-content {
-  display: block;
-}
+/* ===============================
+   Responsive Adjustments
+   =============================== */
 
 @media (max-width: 600px) {
   .bottom-lang {
@@ -1024,6 +1047,7 @@ textarea:focus {
     gap: 8px;
   }
 }
+
 
 /* Bottom Layer */
 .bottom-layer {
@@ -1434,6 +1458,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
