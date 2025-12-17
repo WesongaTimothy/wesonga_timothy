@@ -1001,6 +1001,13 @@ textarea:focus {
   text-decoration: none;
   color: #333;
 }
+/* Card / Section */
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
 
 .dropup-content .lang-item a:hover {
   background-color: #f0f0f0;
@@ -1427,6 +1434,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
