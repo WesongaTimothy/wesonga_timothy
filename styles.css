@@ -176,6 +176,17 @@ body {
   margin-bottom: 10px;
   transition: all 0.3s ease; /* smooth shrink */
 }
+/* Mobile view: center only on small screens */
+@media (max-width: 768px) {
+  .site-title {
+    text-align: center;
+    font-size: 1.2rem;       /* smaller for mobile */
+    line-height: 1.3em;
+    margin: 0 auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
 
 /* Navigation Links */
 .nav-links {
@@ -1572,6 +1583,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
