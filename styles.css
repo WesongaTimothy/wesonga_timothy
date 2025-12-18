@@ -183,7 +183,7 @@ body {
 ========================= */
 .logo-text {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -256,8 +256,9 @@ body {
   }
 
   .logo-text {
-    font-size: 13px;
+    font-size: 16px;
   }
+    
     /* Section Titles */
 .section-title {
     font-size: 1.8rem; /* smaller and more balanced */
@@ -1484,6 +1485,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
