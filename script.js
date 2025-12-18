@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorFollower.style.width = '30px';
         cursorFollower.style.height = '30px';
     });
+
+     // Search Bar
+document.querySelector('.site-search').addEventListener('submit', function(e) {
+  const btn = document.querySelector('.search-btn');
+  btn.textContent = 'Searching…';
+  btn.disabled = true;
+});
     
     // Shrink header on scroll
 window.addEventListener('scroll', function() {
@@ -326,6 +333,7 @@ window.addEventListener('scroll', function() {
         });
     }
 });
+
 
 
 
