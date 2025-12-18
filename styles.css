@@ -150,13 +150,7 @@ body {
   padding-top: 73px;   /* MUST match header height */
   font-family: Arial, Helvetica, sans-serif;
 }
-#home {
-    padding-top:12px;
-}
-#home h1{
-    margin-top: 0;
-}
-       
+
 section:first-of-type,
 main:first-of-type,
 .hero,
@@ -1488,6 +1482,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
