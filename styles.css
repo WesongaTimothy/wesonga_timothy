@@ -147,7 +147,7 @@ a:hover {
 /* IMPORTANT No. 3
    Prevent content hiding under fixed header */
 body {
-  padding-top: 30px;   /* MUST match header height */
+  padding-top: 60px;   /* MUST match header height */
   font-family: Arial, Helvetica, sans-serif;
 }
 section:first-of-type,
@@ -1478,6 +1478,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
