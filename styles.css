@@ -152,15 +152,11 @@ body {
 }
 
 /* ====== HEADER STYLES ====== */
-.site-header {
-  width: 100%;
-  background-color: #f5f5f5;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  transition: all 0.3s ease; /* smooth shrink */
+.site-title {
+  text-align: left;  /* or whatever desktop alignment you want */
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .container {
@@ -1576,6 +1572,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
