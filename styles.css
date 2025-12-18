@@ -135,111 +135,129 @@ a:hover {
 }
 
 /* Layout */
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.underline {
-    height: 4px;
-    width: 60px;
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-    margin: 0 auto;
-    border-radius: 2px;
+/* IMPORTANT No. 3
+   Prevent content hiding under fixed header */
+body {
+  padding-top: 70px;   /* MUST match header height */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-section {
-    padding: 6rem 0;
+/* =========================
+   HEADER
+========================= */
+.main-header {
+  width: 100%;
+  background-color: #142a4f; /* Dark blue */
+  border-top: 4px solid #f5b400; /* Yellow line */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  height: 60px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Navigation */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 900;
-}
-
+/* =========================
+   LOGO / TITLE
+========================= */
 .logo-text {
-    color: var(--text-color);
-}
-.logo-text {
-    background-color: var(--primary-color); /* Use primary color */
-    color: var(--light-text);               /* White text for contrast */
-    padding: 0.3rem 0.6rem;                 /* Small padding */
-    border-radius: 5px;                     /* Rounded corners */
-    display: inline-block;                  /* Proper padding effect */
-    font-weight: 700;                       /* Optional: make logo text bold */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
+/* =========================
+   NAV LINKS
+========================= */
 .nav-links {
-    display: flex;
-    list-style: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.nav-links li {
-    margin-left: 2rem;
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav-link {
-    color: var(--text-color);
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 0;
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #f5b400; /* Yellow hover */
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-    transition: var(--transition);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
-
+/* =========================
+   MENU TOGGLE (MOBILE)
+========================= */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color);
-    margin: 3px 0;
-    transition: var(--transition);
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background-color: #142a4f;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .logo-text {
+    font-size: 13px;
+  }
 }
 
 /* Hero Section */
@@ -1448,6 +1466,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
