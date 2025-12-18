@@ -27,6 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorFollower.style.height = '30px';
     });
     
+    // Shrink header on scroll
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('siteHeader');
+  if (window.scrollY > 50) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+});
+
     // Hover effect on links and buttons
     const links = document.querySelectorAll('a, button, .expertise-card, .project-card');
     links.forEach(link => {
@@ -316,6 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 
 
