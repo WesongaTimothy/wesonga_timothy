@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 5.9rem;
+    font-size: 15.9rem;
     color: var(--text-color);
 }
 
@@ -1466,6 +1466,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
