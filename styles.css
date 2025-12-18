@@ -287,7 +287,7 @@ body {
     font-weight: 800;        /* make it bold */
     color: var(--primary-color); /* stand out from background */
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -1485,6 +1485,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
