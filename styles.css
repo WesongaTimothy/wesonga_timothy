@@ -147,7 +147,7 @@ a:hover {
 /* IMPORTANT No. 3
    Prevent content hiding under fixed header */
 body {
-  padding-top: 70px;   /* MUST match header height */
+  padding-top: 80px;   /* MUST match header height */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -170,7 +170,7 @@ body {
 .navbar {
   max-width: 1200px;
   margin: auto;
-  height: 60px;
+  height: 80px;
   padding: 0 20px;
 
   display: flex;
@@ -183,7 +183,7 @@ body {
 ========================= */
 .logo-text {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -1466,6 +1466,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
