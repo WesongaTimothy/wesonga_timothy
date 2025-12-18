@@ -277,6 +277,22 @@ body {
     margin-bottom: 2rem;
     line-height: 1.5;
 }
+    /* Site title / header */
+.site-title {
+  font-size: 2rem;       /* desktop size */
+  text-align: center;    /* center text */
+  padding: 10px 20px;
+  word-wrap: break-word; /* wrap long text on smaller screens */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;  /* smaller font for mobile */
+    padding: 8px 10px;
+    line-height: 1.2em; /* prevent overlap */
+  }
+}
 }
 
 /* Hero Section */
@@ -1485,6 +1501,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
