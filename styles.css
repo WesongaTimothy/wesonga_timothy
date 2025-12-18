@@ -155,7 +155,7 @@ main:first-of-type,
 .hero,
 #home {
   margin-top: 0;
-  padding-top: 20px; /* controlled spacing */
+  padding-top: 30px; /* controlled spacing */
 }
 
 h1 {
@@ -182,7 +182,7 @@ h1 {
 .navbar {
   max-width: 1200px;
   margin: auto;
-  height: 60px;
+  height: 72px;
   padding: 0 20px;
 
   display: flex;
@@ -1478,6 +1478,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
