@@ -26,7 +26,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--text-color);
     background-color: var(--light-bg);
     overflow-x: hidden;
@@ -286,7 +286,7 @@ body {
     font-size: 3rem;         /* make it bigger */
     font-weight: 800;        /* make it bold */
     color: var(--primary-color); /* stand out from background */
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     line-height: 1.5;
     text-align: left;
 }
@@ -1485,6 +1485,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
