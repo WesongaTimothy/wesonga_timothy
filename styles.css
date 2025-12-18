@@ -178,7 +178,7 @@ main:first-of-type,
 .navbar {
   max-width: 1200px;
   margin: auto;
-  height: 72px;
+  height: 78px;
   padding: 0 20px;
 
   display: flex;
@@ -191,12 +191,10 @@ main:first-of-type,
 ========================= */
 .logo-text {
   color: #ffffff;
-  line-height: 1.4;
+  line-height: 1.9;
   font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
-}
-  
 }
 
 /* =========================
@@ -1477,6 +1475,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
