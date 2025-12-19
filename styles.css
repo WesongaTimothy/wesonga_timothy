@@ -1268,7 +1268,7 @@ footer {
     background-color: #0d1b2a;  /* match footer background */
     color: #FFFFFF;             /* footer text color */
     font-size: 1.15rem;
-    opacity: 1.5;
+    opacity: 0.9;
     width: 100%;                /* ensure it spans full width */
     margin-top: 1.3rem;           /* optional spacing from above content */
 }
@@ -1614,6 +1614,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
