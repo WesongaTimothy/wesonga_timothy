@@ -193,8 +193,8 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 16px;
+  flex-wrap: nowrap; Stop wraping
 }
 
 .nav-links li a {
@@ -1583,6 +1583,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
