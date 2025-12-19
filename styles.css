@@ -1269,9 +1269,9 @@ textarea:focus {
 footer {
     background: linear-gradient(
         to bottom,
-        #f2b705 50%,     /* Golden Yellow (top) */
-        #1b2f57 70%,    /* Dark Blue (main footer) */
-        #1b2f57 70%,    /* Deep Blue transition */
+        #1b2f57 100%,     /* Golden Yellow (top) */
+        #1b2f57 100%,    /* Dark Blue (main footer) */
+        #1b2f57 100%,    /* Deep Blue transition */
         #1b2f57 100%    /* Light Blue (footer end) */
     );
     color: #ffffff;
@@ -1630,6 +1630,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
