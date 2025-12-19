@@ -203,6 +203,7 @@ body {
   color: #333;
   font-weight: 500;
   display: block;
+  white-space:nowrap;
 }
 
 /* ====== MOBILE VIEW ====== */
@@ -1583,6 +1584,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
