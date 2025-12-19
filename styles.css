@@ -1125,6 +1125,39 @@ textarea:focus {
 }
 
 /* Footer */
+.footer-line-gold {
+    background-color: #B8860B; /* Dark Goldenrod color */
+    height: 8px;              /* Thickness of the top line */
+    width: 100%;
+}
+
+.footer-line-navy {
+    background-color: #001F3F; /* Navy Blue color */
+    height: 35px;             /* Thickness of the bottom line */
+    width: 100%;
+}
+
+.site-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}.footer-line-gold {
+    background-color: #B8860B; /* Dark Goldenrod color */
+    height: 8px;              /* Thickness of the top line */
+    width: 100%;
+}
+
+.footer-line-navy {
+    background-color: #001F3F; /* Navy Blue color */
+    height: 35px;             /* Thickness of the bottom line */
+    width: 100%;
+}
+
+.site-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 /* Dropup container */
 .dropup {
   position: relative;
@@ -1614,6 +1647,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
