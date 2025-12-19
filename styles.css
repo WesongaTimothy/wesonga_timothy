@@ -1152,7 +1152,20 @@ textarea:focus {
   min-width: 160px;
   border-radius: 4px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropup:hover .dropup-content,
+.dropup:focus-within .dropup-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropup-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
 
 /* Language items */
@@ -1614,6 +1627,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
