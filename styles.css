@@ -214,6 +214,19 @@ body {
     gap: 10px;
   }
 
+    @media (min-width: 901px) {
+  .nav-links {
+    display: flex !important;
+  }
+}
+    
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+}
+
   .site-title {
     font-size: 1.2rem;
     margin-bottom: 8px;
@@ -259,6 +272,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
 }
 
 /* =========================
@@ -376,7 +403,7 @@ body {
     line-height: 1.2em; /* prevent overlap */
   }
 }
-}
+
 
 /* Hero Section */
 
@@ -1584,6 +1611,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
