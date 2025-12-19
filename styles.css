@@ -1189,7 +1189,7 @@ textarea:focus {
 }
 
 /* Show dropup on hover */
-.dropup:hover .dropup-content {
+.dropup:focus-within .dropup-content {
   display: block;
 }
 
@@ -1614,6 +1614,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
