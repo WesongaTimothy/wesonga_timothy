@@ -296,6 +296,10 @@ body {
   font-size: 18px;
   font-weight: 600;
   white-space: nowrap;
+    .site-title {
+  visibility: hidden;
+}
+
 }
 
 /* =========================
@@ -1611,6 +1615,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
