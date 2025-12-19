@@ -1271,8 +1271,8 @@ footer {
         to bottom,
         #f2b705 0%,     /* Golden Yellow (top) */
         #1b2f57 35%,    /* Dark Blue (main footer) */
-        #264a87 70%,    /* Deep Blue transition */
-        #5dade2 100%    /* Light Blue (footer end) */
+        #1b2f57 70%,    /* Deep Blue transition */
+        #1b2f57 100%    /* Light Blue (footer end) */
     );
     color: #ffffff;
     padding: 4rem 0 0;
