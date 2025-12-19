@@ -377,8 +377,14 @@ body {
     text-align: center;
     margin-bottom: 0.5rem;
     text-transform: none; /* optional: removes all-uppercase */
+    padding: 10px 20px;
+    word-wrap: break-word; /* wrap long text on smaller screens */
+    }
+.site-title,
+.logo-text {
+  display: none;
 }
-
+    
 /* Optional Subtitle */
 .section-subtitle {
     font-size: 1rem;
@@ -386,13 +392,7 @@ body {
     text-align: center;
     margin-bottom: 2rem;
     line-height: 1.5;
-}
-    /* Site title / header */
-.site-title {
-  font-size: 2rem;       /* desktop size */
-  text-align: center;    /* center text */
-  padding: 10px 20px;
-  word-wrap: break-word; /* wrap long text on smaller screens */
+}      
 }
 
 /* Mobile view adjustments */
@@ -1611,6 +1611,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
